@@ -4,6 +4,9 @@ import Board from '../components/Board'
 import GameHistory from '../components/GameHistory'
 import EndGameOverlay from '../components/EndGameOverlay'
 import Minimax from 'tic-tac-toe-minimax'
+import iconX from './src/assets/icon-x.svg'
+import iconO from './src/assets/icon-o.svg'
+import iconRestart from './src/assets/icon-restart.svg'
 
 
 export default function Game(props){
@@ -227,8 +230,8 @@ export default function Game(props){
         <div className="flex flex-col items-center">
             <div className="flex flex-row justify-between items-center w-full mb-16 md:mb-8">
                 <div className="flex flex-row gap-2">
-                    <img className="w-8 md:w-10" src="./src/assets/icon-x.svg" alt="X icon" />
-                    <img className="w-8 md:w-10" src="./src/assets/icon-o.svg" alt="O icon" />
+                    <img className="w-8 md:w-10" src={iconX} alt="X icon" />
+                    <img className="w-8 md:w-10" src={iconO} alt="O icon" />
                 </div>
                 <TurnIndicator 
                     firstPlayer={props.firstPlayer}
@@ -252,7 +255,7 @@ export default function Game(props){
             />
             <button onClick={clearGameHistory} className="bg-gray shadow-small shadow-[#6B8997] p-3 rounded-lg hover:bg-off-white w-full flex flex-row justify-center gap-3 uppercase font-bold py-6 mt-6">
                 Reset Record
-                <img className="w-4 md:w-6" src="./src/assets/icon-restart.svg" alt="Restart icon" />
+                <img className="w-4 md:w-6" src={iconRestart} alt="Restart icon" />
             </button>
             <EndGameOverlay 
                 playerTurn={isPlayerTurn}

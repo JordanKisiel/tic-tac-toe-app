@@ -1,4 +1,6 @@
 import React from 'react'
+import iconX from './src/assets/icon-x.svg'
+import iconO from './src/assets/icon-o.svg'
 
 export default function GameResult(props){
 

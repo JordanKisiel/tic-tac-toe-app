@@ -1,14 +1,16 @@
 import React from 'react'
 import MarkPicker from '../components/MarkPicker'
 import DifficultyPicker from '../components/DifficultyPicker'
+import iconX from './src/assets/icon-x.svg'
+import iconO from './src/assets/icon-o.svg'
 
 export default function NewGameScreen(props){
 
     return (
         <div className="flex flex-col items-center">
             <div className="flex flex-row gap-2 mb-8">
-                <img className="w-8" src="./src/assets/icon-x.svg" />
-                <img className="w-8" src="./src/assets/icon-o.svg" />
+                <img className="w-8" src={iconX} />
+                <img className="w-8" src={iconO} />
             </div>
             <MarkPicker 
                 handleMarkPick={props.handleMarkPick} 

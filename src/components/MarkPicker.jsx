@@ -1,4 +1,8 @@
 import React from "react"
+import iconXBlue from './src/assets/icon-x-blue.svg'
+import iconOBlue from './src/assets/icon-o-blue.svg'
+import iconXGray from './src/assets/icon-x-gray.svg'
+import iconOGray from './src/assets/icon-o-gray.svg'
 
 export default function MarkPicker(props){
 

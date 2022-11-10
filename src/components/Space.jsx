@@ -1,4 +1,10 @@
 import React from 'react'
+import iconXBlue from './src/assets/icon-x-blue.svg'
+import iconOBlue from './src/assets/icon-o-blue.svg'
+import iconXOutline from './src/assets/icon-x-outline.svg'
+import iconOOutline from './src/assets/icon-o-outline.svg'
+import iconX from './src/assets/icon-x.svg'
+import iconO from './src/assets/icon-o.svg'
 
 export default function Space(props){
 
