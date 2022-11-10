@@ -1,4 +1,10 @@
 import React from 'react'
+import iconXBlue from '/icon-x-blue.svg'
+import iconOBlue from '/icon-o-blue.svg'
+import iconX from '/icon-x.svg'
+import iconO from '/icon-o.svg'
+import iconXOutline from '/icon-x-outline.svg'
+import iconOOutline from '/icon-o-outline.svg'
 
 export default function Space(props){
 
@@ -13,18 +19,18 @@ export default function Space(props){
 
     if(props.display === 'x'){
         if(props.winningLine.includes(props.id)){
-            imageToUse = 'icon-x-blue.svg'
+            imageToUse = iconXBlue
         }
         else{
-            imageToUse = 'icon-x.svg'
+            imageToUse = iconX
         }
     }
     else if(props.display === 'o'){
         if(props.winningLine.includes(props.id)){
-            imageToUse = 'icon-o-blue.svg'
+            imageToUse = iconOBlue
         }
         else{
-            imageToUse = 'icon-o.svg'
+            imageToUse = iconO
         }
     }
     else{
@@ -35,9 +41,11 @@ export default function Space(props){
     
     if(props.firstPlayer && props.display === ''){
         outlineToUse = "hover:bg-[url('/icon-x-outline.svg')]" 
+        outlineToUse = `hover:bg-[url(${iconXOutline})]`
     }
     else if(!props.firstPlayer && props.display === ''){
         outlineToUse = "hover:bg-[url('/icon-o-outline.svg')]"
+        outlineToUse = `hover:bg-[url(${iconOOutline})]`
     }
     
     function handleSpaceClick(){
@@ -48,7 +56,7 @@ export default function Space(props){
 
     return (
         <div onClick={() => handleSpaceClick()} className={`${bgToUse} shadow-big aspect-square rounded-lg flex flex-row justify-center items-center ${props.playerTurn ? 'cursor-pointer' : ''} hover:bg-no-repeat hover:bg-center hover:bg-[length:50%] ${props.playerTurn ? 'hover:bg-[#28434f]' : ''}  ${props.playerTurn ? outlineToUse : ''}`}>
-            {!isEmpty && <img className="w-12 -mt-1 md:w-16 lg:w-24" src={`/${imageToUse}`} />}
+            {!isEmpty && <img className="w-12 -mt-1 md:w-16 lg:w-24" src={`${imageToUse}`} />}
         </div>
     )
 }

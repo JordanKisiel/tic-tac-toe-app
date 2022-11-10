@@ -15,7 +15,7 @@ export default function MarkPicker(props){
                     <img className="w-8" src={`${props.firstPlayer ? iconXBlue : iconXGray}`} alt="X icon" />
                 </button>
                 <button onClick={() => props.handleMarkPick(false)} className={`${!props.firstPlayer ? 'bg-gray' : 'hover:bg-gray/5'} rounded-xl w-full flex flex-row justify-center items-center`}>
-                    <img className="w-8 py-3" src={`${props.firstPlayer ? iconOBlue : iconOGray}`} alt="O icon" />
+                    <img className="w-8 py-3" src={`${props.firstPlayer ? iconOGray : iconOBlue}`} alt="O icon" />
                 </button>
             </div>
             <p className="opacity-50 text-sm tracking-wide">Remember: X goes first</p>
