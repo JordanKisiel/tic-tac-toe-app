@@ -9,7 +9,7 @@ export default function TurnIndicator(props){
 
     return (
         <div className="bg-dark-blue text-gray rounded-lg flex flex-row justify-between items-center shadow-small gap-3 px-4 pt-2.5 pb-3">
-            <img className="w-4 md:w-6" src={`${props.playerTurn ? playerMark : cpuMark}`} alt="X icon" />
+            <img className="w-4 md:w-6" src={props.playerTurn ? playerMark : cpuMark} alt="X icon" />
             <span className="text-sm font-bold tracking-wide md:text-base">Turn</span>
         </div>
     )

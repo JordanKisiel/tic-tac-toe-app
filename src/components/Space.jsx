@@ -41,11 +41,11 @@ export default function Space(props){
     
     if(props.firstPlayer && props.display === ''){
         outlineToUse = "hover:bg-[url('/icon-x-outline.svg')]" 
-        outlineToUse = `hover:bg-[url(${iconXOutline})]`
+        outlineToUse = `hover:bg-[url('${iconXOutline}')]`
     }
     else if(!props.firstPlayer && props.display === ''){
         outlineToUse = "hover:bg-[url('/icon-o-outline.svg')]"
-        outlineToUse = `hover:bg-[url(${iconOOutline})]`
+        outlineToUse = `hover:bg-[url('${iconOOutline}')]`
     }
     
     function handleSpaceClick(){
