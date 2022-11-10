@@ -1,13 +1,16 @@
 {
   "name": "tic-tac-toe-app",
   "private": true,
+  "homepage": "https://JordanKisiel.github.io/tic-tac-toe-app",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "watch": "tailwindcss -i ./src/index.css -o ./src/css/main.css --watch"
+    "watch": "tailwindcss -i ./src/index.css -o ./src/css/main.css --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
