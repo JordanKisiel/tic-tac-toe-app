@@ -86,6 +86,8 @@ export default function Game(props){
     }
 
     function playCPUTurn(){
+        console.log('fired?')
+
         const { ComputerMove } = Minimax
         
         const huPlayer = props.firstPlayer ? 'X' : 'O'
@@ -94,7 +96,6 @@ export default function Game(props){
             huPlayer: huPlayer,
             aiPlayer: aiPlayer
         }
-        const difficulty = "Hard"
 
         let boardCopy = board.slice()
         boardCopy = boardCopy.map((space, index) => {
@@ -111,7 +112,7 @@ export default function Game(props){
             }
         })
         
-        let nextMove = ComputerMove( boardCopy, symbols, difficulty )
+        let nextMove = ComputerMove( boardCopy, symbols, "Hard")
         
         const randomNum = Math.random()
 

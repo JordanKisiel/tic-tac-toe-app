@@ -6,6 +6,8 @@ export default function App(){
 
     /*
         TODO:
+            
+            -figure out why background images are not being applied in css (maybe minification issue?)
             -add animations
             -upload to github (remember bookmark that talks about deploying build version)
     */
