@@ -1,8 +1,8 @@
 import React from 'react'
 import MarkPicker from '../components/MarkPicker'
 import DifficultyPicker from '../components/DifficultyPicker'
-import iconX from './src/assets/icon-x.svg'
-import iconO from './src/assets/icon-o.svg'
+import iconX from '/assets/icon-x.svg'
+import iconO from '/assets/icon-o.svg'
 
 export default function NewGameScreen(props){
 

@@ -1,10 +1,4 @@
 import React from 'react'
-import iconXBlue from './src/assets/icon-x-blue.svg'
-import iconOBlue from './src/assets/icon-o-blue.svg'
-import iconXOutline from './src/assets/icon-x-outline.svg'
-import iconOOutline from './src/assets/icon-o-outline.svg'
-import iconX from './src/assets/icon-x.svg'
-import iconO from './src/assets/icon-o.svg'
 
 export default function Space(props){
 
@@ -40,10 +34,10 @@ export default function Space(props){
     let outlineToUse = ''
     
     if(props.firstPlayer && props.display === ''){
-        outlineToUse = "hover:bg-[url('./src/assets/icon-x-outline.svg')]" 
+        outlineToUse = "hover:bg-[url('/assets/icon-x-outline.svg')]" 
     }
     else if(!props.firstPlayer && props.display === ''){
-        outlineToUse = "hover:bg-[url('./src/assets/icon-o-outline.svg')]"
+        outlineToUse = "hover:bg-[url('/assets/icon-o-outline.svg')]"
     }
     
     function handleSpaceClick(){
@@ -54,7 +48,7 @@ export default function Space(props){
 
     return (
         <div onClick={() => handleSpaceClick()} className={`${bgToUse} shadow-big aspect-square rounded-lg flex flex-row justify-center items-center ${props.playerTurn ? 'cursor-pointer' : ''} hover:bg-no-repeat hover:bg-center hover:bg-[length:50%] ${props.playerTurn ? 'hover:bg-[#28434f]' : ''}  ${props.playerTurn ? outlineToUse : ''}`}>
-            {!isEmpty && <img className="w-12 -mt-1 md:w-16 lg:w-24" src={`./src/assets/${imageToUse}`} />}
+            {!isEmpty && <img className="w-12 -mt-1 md:w-16 lg:w-24" src={`/assets/${imageToUse}`} />}
         </div>
     )
 }
