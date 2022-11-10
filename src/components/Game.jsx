@@ -4,9 +4,9 @@ import Board from '../components/Board'
 import GameHistory from '../components/GameHistory'
 import EndGameOverlay from '../components/EndGameOverlay'
 import Minimax from 'tic-tac-toe-minimax'
-import iconX from '/assets/icon-x.svg'
-import iconO from '/assets/icon-o.svg'
-import iconRestart from '/assets/icon-restart.svg'
+import iconX from '/icon-x.svg'
+import iconO from '/icon-o.svg'
+import iconRestart from '/icon-restart.svg'
 
 
 export default function Game(props){

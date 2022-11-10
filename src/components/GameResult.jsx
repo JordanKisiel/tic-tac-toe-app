@@ -1,6 +1,4 @@
 import React from 'react'
-import iconX from '/assets/icon-x.svg'
-import iconO from '/assets/icon-o.svg'
 
 export default function GameResult(props){
 
@@ -27,7 +25,7 @@ export default function GameResult(props){
 
     return (
         <div className="flex flex-row items-center gap-2 mb-6 lg:gap-6">
-            {props.result !== 'draw' && <img className="w-8 md:w-12 lg:w-20" src={`/assets/${imageToUse}`} alt="O icon" />}
+            {props.result !== 'draw' && <img className="w-8 md:w-12 lg:w-20" src={`/${imageToUse}`} alt="O icon" />}
             <span className={`${colorToUse} text-2xl font-bold tracking-wider md:text-4xl lg:text-5xl`}>{resultMessage}</span>
         </div>
     )
