@@ -1,7 +1,7 @@
 {
   "name": "tic-tac-toe-app",
   "private": true,
-  "homepage": "https://JordanKisiel.github.io/tic-tac-toe-app",
+  "homepage": ".",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
