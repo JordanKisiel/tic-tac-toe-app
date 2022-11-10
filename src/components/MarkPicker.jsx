@@ -12,10 +12,10 @@ export default function MarkPicker(props){
             <h2 className="text-base tracking-wide">Select Your Mark</h2>
             <div className="bg-very-dark-blue w-full flex flex-row justify-between px-2 py-2.5 rounded-xl gap-1">
                 <button onClick={() => props.handleMarkPick(true)} className={`${props.firstPlayer ? 'bg-gray' : 'hover:bg-gray/5'} w-full rounded-xl flex flex-row justify-center items-center`}>
-                    <img className="w-8" src={`${props.firstPlayer ? iconXBlue : iconXGray}`} alt="X icon" />
+                    <img className="w-8" src={props.firstPlayer ? iconXBlue : iconXGray} alt="X icon" />
                 </button>
                 <button onClick={() => props.handleMarkPick(false)} className={`${!props.firstPlayer ? 'bg-gray' : 'hover:bg-gray/5'} rounded-xl w-full flex flex-row justify-center items-center`}>
-                    <img className="w-8 py-3" src={`${props.firstPlayer ? iconOGray : iconOBlue}`} alt="O icon" />
+                    <img className="w-8 py-3" src={props.firstPlayer ? iconOGray : iconOBlue} alt="O icon" />
                 </button>
             </div>
             <p className="opacity-50 text-sm tracking-wide">Remember: X goes first</p>

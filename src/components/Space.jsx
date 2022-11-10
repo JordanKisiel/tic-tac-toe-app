@@ -56,7 +56,7 @@ export default function Space(props){
 
     return (
         <div onClick={() => handleSpaceClick()} className={`${bgToUse} shadow-big aspect-square rounded-lg flex flex-row justify-center items-center ${props.playerTurn ? 'cursor-pointer' : ''} hover:bg-no-repeat hover:bg-center hover:bg-[length:50%] ${props.playerTurn ? 'hover:bg-[#28434f]' : ''}  ${props.playerTurn ? outlineToUse : ''}`}>
-            {!isEmpty && <img className="w-12 -mt-1 md:w-16 lg:w-24" src={`${imageToUse}`} />}
+            {!isEmpty && <img className="w-12 -mt-1 md:w-16 lg:w-24" src={imageToUse} />}
         </div>
     )
 }

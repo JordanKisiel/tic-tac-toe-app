@@ -1,5 +1,5 @@
 import React from 'react'
-import iconXGray from '/icon-o-gray.svg'
+import iconXGray from '/icon-x-gray.svg'
 import iconOGray from '/icon-o-gray.svg'
 
 export default function TurnIndicator(props){
