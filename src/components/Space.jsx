@@ -40,12 +40,12 @@ export default function Space(props){
     let outlineToUse = ''
     
     if(props.firstPlayer && props.display === ''){
-        outlineToUse = "hover:bg-[url('/icon-x-outline.svg')]" 
         outlineToUse = `hover:bg-[url('${iconXOutline}')]`
+        outlineToUse = "hover:bg-[url('https://jordankisiel.github.io/tic-tac-toe-app/icon-x-outline.svg')]" 
     }
     else if(!props.firstPlayer && props.display === ''){
-        outlineToUse = "hover:bg-[url('/icon-o-outline.svg')]"
         outlineToUse = `hover:bg-[url('${iconOOutline}')]`
+        outlineToUse = "hover:bg-[url('https://jordankisiel.github.io/tic-tac-toe-app/icon-o-outline.svg')]"
     }
     
     function handleSpaceClick(){
