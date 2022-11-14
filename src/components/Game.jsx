@@ -18,7 +18,7 @@ export default function Game(props){
     const CPU_THINKING_TIME = 1500
     const EASY_BLUNDER_PERCENT = 0.9
     const MEDIUM_BLUNDER_PERCENT = 0.5
-    const HARD_BLUNDER_PERCENT = 0.1
+    const HARD_BLUNDER_PERCENT = 0.15
 
     //player turn calculated based on board state and firstPlayer state passed in through props
     const numOpenSpaces = board.filter((space) => (space === '')).length
