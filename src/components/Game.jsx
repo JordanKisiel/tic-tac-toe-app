@@ -15,7 +15,7 @@ export default function Game(props){
     const [board, setBoard] = React.useState(Array(9).fill(''))
 
     //in ms
-    const CPU_THINKING_TIME = 1700
+    const CPU_THINKING_TIME = 1500
     const EASY_BLUNDER_PERCENT = 0.9
     const MEDIUM_BLUNDER_PERCENT = 0.5
     const HARD_BLUNDER_PERCENT = 0.1
@@ -86,7 +86,7 @@ export default function Game(props){
     }
 
     function playCPUTurn(){
-        console.log('fired?')
+        console.log('playing CPU turn')
 
         const { ComputerMove } = Minimax
         
@@ -154,15 +154,9 @@ export default function Game(props){
     }
 
     //add delay to CPU to simulate thinking
-    const firstUpdate = React.useRef(true)
     React.useEffect(() => {
-        let timedCPUTurn = null
 
-        //prevent running on first render
-        if(firstUpdate.current){
-            firstUpdate.current = false
-            return
-        }
+        let timedCPUTurn = null
 
         if(numOpenSpaces > 0){
             if(!isPlayerTurn){

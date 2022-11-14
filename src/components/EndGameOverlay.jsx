@@ -5,8 +5,8 @@ import GameResult from '../components/GameResult'
 export default function EndGameOverlay(props){
 
     return (
-        <div className={`bg-black/50 fixed inset-0 ${props.result === '' && 'hidden'}`}>
-            <div className="bg-dark-blue/90 fixed inset-x-0 top-1/2 -translate-y-1/2 flex flex-col items-center py-10">
+        <div className={`bg-black/50 animate-fade fixed inset-0 ${props.result === '' && 'hidden'}`}>
+            <div className="bg-dark-blue/90 fixed inset-x-0 top-1/2 flex flex-col items-center py-10 animate-flip-in">
                 <EndGameMessage 
                     result={props.result}
                     playerTurn={props.playerTurn}
