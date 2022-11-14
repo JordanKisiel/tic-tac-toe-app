@@ -40,7 +40,6 @@ Users should be able to:
 
 ### Built with
 
-- Tailwindcss
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS framework
 - [Tailwindcss](https://tailwindcss.com/) - CSS framework
